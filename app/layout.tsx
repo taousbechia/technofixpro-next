@@ -32,18 +32,16 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col overflow-x-hidden">
 
-        {/* NAVBAR */}
         <Navbar />
 
-        {/* CONTENU */}
-        <main className="flex-1 w-full px-4 md:px-8">
+        {/* ❌ PAS DE PADDING ICI */}
+        <main className="flex-1 w-full">
           {children}
         </main>
 
-        {/* FOOTER */}
         <Footer />
 
-        {/* WHATSAPP */}
+        {/* WhatsApp */}
         <a
           href="https://wa.me/213672970329"
           target="_blank"
