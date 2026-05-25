@@ -31,7 +31,7 @@ export default function StatsSection() {
             {/* Logo circle */}
             <div className="w-12 h-12 rounded-full border-2 border-blue-500 overflow-hidden bg-white flex items-center justify-center">
               <img
-                src="/logo.png"
+                src="/Logou.png"
                 alt="Logo"
                 className="w-full h-full object-cover"
               />
