@@ -1,4 +1,8 @@
 
+
+
+
+
 "use client";
 import { useState } from "react";
 import Link from "next/link";
@@ -47,14 +51,17 @@ export default function Navbar() {
             </Link>
           ))}
 
+          {/* WhatsApp */}
           <a
             href="https://wa.me/213672970329"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-green-400 font-semibold hover:opacity-80"
           >
             WhatsApp
           </a>
 
+          {/* Call */}
           <a
             href="tel:+213781382799"
             className="flex items-center gap-1 text-white hover:text-blue-400"
@@ -63,17 +70,22 @@ export default function Navbar() {
             Call
           </a>
 
+          {/* ✅ EMAIL FIX (GMAIL DIRECT) */}
           <a
-            href="mailto:technofixpro21@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=technofixpro21@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-yellow-400 hover:opacity-80"
           >
             <Mail size={16} />
             Email
           </a>
 
+          {/* TikTok */}
           <a
             href="https://www.tiktok.com/@technofixpro"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-pink-400"
           >
             TikTok
@@ -97,7 +109,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* MENU MOBILE / TABLETTE */}
+      {/* MENU MOBILE */}
       {menuOpen && (
         <div className="lg:hidden bg-white text-[#020617] px-6 py-5 space-y-4 shadow-xl">
 
@@ -114,13 +126,17 @@ export default function Navbar() {
 
           <div className="border-t pt-4 space-y-3">
 
+            {/* WhatsApp */}
             <a
               href="https://wa.me/213672970329"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-green-600 font-bold"
             >
               💬 WhatsApp
             </a>
 
+            {/* Call */}
             <a
               href="tel:+213781382799"
               className="block text-blue-600 font-bold"
@@ -128,22 +144,28 @@ export default function Navbar() {
               📞 Appeler
             </a>
 
+            {/* ✅ EMAIL FIX MOBILE */}
             <a
-              href="mailto:technofixpro21@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=technofixpro21@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-yellow-500 font-bold"
             >
               📧 Email
             </a>
 
+            {/* TikTok */}
             <a
               href="https://www.tiktok.com/@technofixpro"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block font-bold"
             >
               🎵 TikTok
             </a>
           </div>
 
-          {/* BOUTON DEVIS MOBILE */}
+          {/* DEVIS MOBILE */}
           <Link
             href="/devis"
             onClick={() => setMenuOpen(false)}
@@ -156,7 +178,4 @@ export default function Navbar() {
     </nav>
   );
 }
-
-
-
 
