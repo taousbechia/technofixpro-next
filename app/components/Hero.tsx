@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 "use client";
 import Link from "next/link";
 import { Wrench, Globe, Laptop, Shield } from "lucide-react";
@@ -9,10 +19,11 @@ const Hero = () => {
       {/* LEFT */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 md:px-12 py-16">
 
-        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-          Maintenance informatique<br />
-          <span className="text-blue-500">
-            & développement sur mesure
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight space-y-2">
+          <span className="block">Maintenance informatique</span>
+          <span className="block">Réseaux & Sécurité</span>
+          <span className="block text-blue-500">
+            Développement sur mesure
           </span>
         </h1>
 
@@ -25,14 +36,14 @@ const Hero = () => {
 
           <Link
             href="/services"
-            className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-md font-medium"
+            className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md"
           >
             NOS SERVICES
           </Link>
 
           <Link
             href="/contact"
-            className="border border-blue-600 hover:bg-blue-600 transition px-6 py-3 rounded-md"
+            className="border border-blue-600 hover:bg-blue-600 px-6 py-3 rounded-md"
           >
             NOUS CONTACTER
           </Link>
@@ -80,7 +91,6 @@ const Hero = () => {
 };
 
 export default Hero;
-
 
 
 

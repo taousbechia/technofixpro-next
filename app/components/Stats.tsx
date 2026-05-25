@@ -1,5 +1,11 @@
 
-// StatsSection.jsx
+
+
+
+
+
+"use client";
+
 export default function StatsSection() {
   const stats = [
     { id: 1, number: "100+", title: "Interventions réalisées", icon: "⚙️" },
@@ -10,7 +16,7 @@ export default function StatsSection() {
 
   return (
     <section className="relative bg-white overflow-hidden">
-
+      
       {/* HERO */}
       <div
         className="relative min-h-[60vh] bg-cover bg-center flex items-start"
@@ -28,8 +34,8 @@ export default function StatsSection() {
           {/* LOGO + BRAND */}
           <div className="flex items-center gap-3">
 
-            {/* Logo circle */}
-            <div className="w-12 h-12 rounded-full border-2 border-blue-500 overflow-hidden bg-white flex items-center justify-center">
+            {/* ✅ LOGO RESPONSIVE */}
+            <div className="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-blue-500 overflow-hidden bg-white flex items-center justify-center">
               <img
                 src="/Logou.png"
                 alt="Logo"
@@ -37,13 +43,13 @@ export default function StatsSection() {
               />
             </div>
 
-            {/* Text */}
+            {/* TEXT */}
             <div>
-              <h1 className="text-3xl md:text-3xl font-extrabold text-white">
+              <h1 className="text-xl md:text-3xl font-extrabold text-white">
                 Technofix<span className="text-blue-500">pro</span>
               </h1>
 
-              <p className="text-base md:text-xl mt-2 text-white">
+              <p className="text-sm md:text-xl mt-1 md:mt-2 text-white">
                 <span className="text-blue-500 font-semibold">
                   Développement. Maintenance.
                 </span>{" "}
@@ -54,15 +60,15 @@ export default function StatsSection() {
           </div>
 
           {/* LINE */}
-          <div className="w-16 h-1 bg-blue-500 mt-8"></div>
+          <div className="w-12 md:w-16 h-1 bg-blue-500 mt-6 md:mt-8"></div>
 
           {/* TITLE */}
-          <div className="mt-10 max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+          <div className="mt-6 md:mt-10 max-w-xl">
+            <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
               Nos chiffres clés
             </h2>
 
-            <p className="mt-6 text-lg md:text-2xl text-gray-200 leading-relaxed">
+            <p className="mt-4 md:mt-6 text-base md:text-2xl text-gray-200 leading-relaxed">
               Des chiffres concrets qui prouvent notre expertise
               <br />
               et la satisfaction de nos clients.
@@ -73,7 +79,7 @@ export default function StatsSection() {
       </div>
 
       {/* STATS SECTION */}
-      <div className="relative -mt-20 px-6">
+      <div className="relative -mt-16 md:-mt-20 px-6">
 
         <div className="bg-[#f3f3f3] rounded-[30px] shadow-2xl p-6 md:p-12 max-w-6xl mx-auto">
 
@@ -85,15 +91,17 @@ export default function StatsSection() {
                 className="bg-white border border-gray-200 rounded-3xl p-6 text-center hover:shadow-2xl hover:-translate-y-1 transition duration-300"
               >
                 {/* ICON */}
-                <div className="text-4xl mb-4">{item.icon}</div>
+                <div className="text-3xl md:text-4xl mb-4">
+                  {item.icon}
+                </div>
 
                 {/* NUMBER */}
-                <h3 className="text-4xl md:text-4xl font-extrabold text-blue-600">
+                <h3 className="text-3xl md:text-4xl font-extrabold text-blue-600">
                   {item.number}
                 </h3>
 
                 {/* TITLE */}
-                <p className="mt-3 text-lg md:text-xl font-semibold text-gray-700">
+                <p className="mt-3 text-base md:text-xl font-semibold text-gray-700">
                   {item.title}
                 </p>
               </div>
