@@ -4,6 +4,7 @@
 
 
 
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -24,13 +25,11 @@ export const metadata: Metadata = {
   title: "TechnoFixPro - Réparation informatique à Akbou",
   description:
     "TechnoFixPro vous propose la réparation informatique, service professionnel et fiable.",
-  
-  // ✅ FAVICON
+
   icons: {
     icon: "/favicon.ico",
   },
 
-  // ✅ BONUS SEO
   keywords: ["réparation PC", "informatique", "Akbou", "TechnoFixPro"],
   authors: [{ name: "TechnoFixPro" }],
 };
@@ -45,25 +44,25 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
 
         {/* 🔝 NAVBAR */}
         <Navbar />
 
-        {/* 📄 CONTENU */}
-        <main className="flex-1">
+        {/* 📄 CONTENU (FIX ICI) */}
+        <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-8">
           {children}
         </main>
 
         {/* 🔻 FOOTER */}
         <Footer />
 
-        {/* 💬 BOUTON WHATSAPP */}
+        {/* 💬 WHATSAPP FIXED */}
         <a
           href="https://wa.me/213672970329"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg z-50"
+          className="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg z-50"
         >
           WhatsApp
         </a>
@@ -72,7 +71,5 @@ export default function RootLayout({
     </html>
   );
 }
-
-
 
 
