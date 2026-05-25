@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -27,7 +23,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TechnoFixPro - Réparation informatique à Akbou",
   description:
-    "TechnoFixPro vous propose la réparation informatique ,Service professionnel et fiable.",
+    "TechnoFixPro vous propose la réparation informatique, service professionnel et fiable.",
+  
+  // ✅ FAVICON
+  icons: {
+    icon: "/favicon.ico",
+  },
+
+  // ✅ BONUS SEO
+  keywords: ["réparation PC", "informatique", "Akbou", "TechnoFixPro"],
+  authors: [{ name: "TechnoFixPro" }],
 };
 
 export default function RootLayout({
@@ -42,18 +47,18 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
 
-        {/* NAVBAR */}
+        {/* 🔝 NAVBAR */}
         <Navbar />
 
-        {/* CONTENU */}
+        {/* 📄 CONTENU */}
         <main className="flex-1">
           {children}
         </main>
 
-        {/* FOOTER */}
+        {/* 🔻 FOOTER */}
         <Footer />
 
-        {/* 🔥 BOUTON WHATSAPP GLOBAL */}
+        {/* 💬 BOUTON WHATSAPP */}
         <a
           href="https://wa.me/213672970329"
           target="_blank"
