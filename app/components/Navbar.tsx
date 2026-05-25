@@ -22,7 +22,7 @@ export default function Navbar() {
 
         {/* LOGO */}
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="logo" className="w-9 h-9" />
+          <img src="/Logou.png" alt="logo" className="w-9 h-9" />
 
           <div className="leading-tight">
             <h1 className="text-white font-extrabold text-lg">
